@@ -1,0 +1,28 @@
+.slide_menu {
+  display: none;
+  background-color: #fff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  padding: 120px 220px 0 0;
+  z-index: 990;
+  .slide_menu__wrap{
+    img{
+      position:absolute;
+      right: 55px;
+      top: 55px;
+      cursor:pointer;
+    }
+    ul{
+      margin-left: 32%;
+      li a{
+        font-family: "MyriadPro Regular";
+        line-height: 35px;
+        font-size: 22px;
+        color: #000;
+      }
+    }
+  }
+}
