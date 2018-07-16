@@ -67,3 +67,16 @@ body{
     left: 0;
   }
 }
+.authorization_form_btn{
+  border-radius: 5px;
+  height: 40px;
+  cursor:pointer;
+  background-color: transparent;
+  font-family: "MyriadPro Regular";
+  font-size: 21px;
+  border: 1px solid $main_color;
+  color: $main_color;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+}

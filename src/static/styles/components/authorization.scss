@@ -1,0 +1,62 @@
+.authorization_s{
+  z-index: 999;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 40px 70px 60px 70px;
+  background-color: #e5e5e5;
+  max-height: fit-content;
+  border-radius: 5px;
+  max-width: 677px;
+  width: 100%;
+  .authorization_s__wrap{
+    position: relative;
+    .authorization_nav {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      position: relative;
+      .authorization_btn__wrap {
+        display: flex;
+        flex-direction: row;
+        .authorization_btn {
+          cursor: pointer;
+          height: 39px;
+          border-radius: 5px;
+          background-color: #fff;
+          h5 {
+            font-family: "MyriadPro Regular";
+            font-size: 18px;
+            color: #000;
+            line-height: 39px;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+        .authorization_btn-active{
+            background-color: $main_color;
+            h5 {
+              color: #fff;
+            }
+        }
+        .authorization_btn-enter {
+          width: 82px;
+          margin-right: 15px;
+        }
+        .authorization_btn-registration {
+          width: 147px;
+        }
+      }
+      .cancel{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+      }
+    }
+    @import "enter";
+    @import "registration";
+  }
+}

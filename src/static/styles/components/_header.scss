@@ -33,6 +33,7 @@ header{
       .header_menu {
         display: flex;
         flex-direction: row;
+        cursor:pointer;
         .header_menu_hamburger_wrap--red {
           display: flex;
           align-items: center;
@@ -41,7 +42,6 @@ header{
           border-radius: 5px;
           width: 49px;
           height: 42px;
-          cursor: pointer;
           z-index: 2;
           .header_menu_hamburger {
             display: flex;

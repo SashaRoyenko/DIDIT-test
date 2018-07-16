@@ -1,0 +1,91 @@
+.enter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3{
+    font-family: 'MyriadPro-Semibold';
+    color: #000;
+    font-size: 25px;
+    margin-top: 95px;
+    margin-bottom: 25px;
+  }
+  p{
+    font-family: "MyriadPro Regular";
+    font-size: 16px;
+
+  }
+  .enter_form{
+    margin-top: 40px;
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    input{
+      position: relative;
+      border:none;
+      background-color: #fff;
+      outline:none;
+      border-radius:5px;
+      height: 50px;
+      padding-left: 20px;
+      margin-bottom: 27px;
+    }
+    .password__wrap {
+      position: relative;
+      margin-bottom: 27px;
+      #change_password_view{
+        cursor: pointer;
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 25px;
+        height: 15px;
+        background: url('../img/enter/view.png') no-repeat center;
+      }
+      input{
+        margin: 0;
+        max-width: 541px;
+        width: 100%;
+      }
+    }
+
+  .enter_nav__wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .enter_btn{
+      width: 134px;
+    }
+    p{
+      font-family: "MyriadPro Regular";
+      font-size: 18px;
+      color:#676767;
+      margin-left: 28px;
+      margin-right: 40px;
+    }
+    .remember_form{
+      margin-bottom: 0;
+    }
+    label{
+      margin-left: 10px;
+      font-family: "MyriadPro Regular";
+      font-size: 18px;
+    }
+   }
+  }
+    h4 {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-family: 'MyriadPro-Semibold';
+      font-size: 22px;
+    }
+  .enter_social-networks{
+    img{
+      cursor:pointer;
+    }
+    img:nth-of-type(2){
+      margin: 0 30px;
+    }
+  }
+  }

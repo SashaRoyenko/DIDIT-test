@@ -35,10 +35,44 @@ $(document).ready(function () {
         $('.slide_search').slideToggle();
         $('.navigation_s').css('position','relative');
         $('#wrap').css('display','block');
-    })
+    });
     $('#slide_search_cancel').click(function(){
         $('.navigation_s').css('position','sticky');
         $('#wrap').css('display','none');
         $('.slide_search').slideUp();
-    });;
+    });
+    //Authorization
+    $('#user').click(function(){
+        $('#authorization').fadeIn();
+        $('#wrap').css('display','block');
+    });
+    $('#authorization_cancel').click(function(){
+        $('#authorization').fadeOut();
+        $('#wrap').css('display','none');
+    });
+    $('#registration_btn').click(function(){
+        $('.enter').css('display','none');
+        $('.registration').fadeIn();
+        $('.authorization_btn-enter').removeClass('authorization_btn-active');
+        $('.authorization_btn-registration').addClass('authorization_btn-active')
+    });
+    $('#enter_btn').click(function(){
+        $('.registration').css('display','none');
+        $('.enter').fadeIn();
+        $('.authorization_btn-registration').removeClass('authorization_btn-active');
+        $('.authorization_btn-enter').addClass('authorization_btn-active')
+    });
+    $('#change_password_view').click(function () {
+        if ($('#password').get(0).type=='password')
+            $('#password').get(0).type='text';
+        else $('#password').get(0).type='password'
+    });
+    $('#registration_submit').click(function () {
+        var pas1=$('#first_password').val(),
+            pas2=$('#second_password').val();
+        if(pas1!=pas2) {
+            alert("Пароли  не совпадают. Пожалуйста, проверьте  идентичность паролей в обоих полях!");
+        }
+
+    });
 });

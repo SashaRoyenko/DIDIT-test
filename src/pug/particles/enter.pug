@@ -1,0 +1,18 @@
+.enter
+    h3 Авторизация
+    p Пожалуйста, авторизируйтесь заполнив форму ниже
+    form.enter_form
+        input(type='e-mail', placeholder='E-mail', required)
+        article.password__wrap
+            input#password( type='password', placeholder='Пароль', minlength="8", required)
+            div#change_password_view
+        nav.enter_nav__wrap
+            button.authorization_form_btn.enter_btn ВОЙТИ
+            p Забыли пароль?
+            input.remember_form(type='checkbox')
+            label Запомнить меня
+    h4 Войти с помощью:
+    div.enter_social-networks
+        img(src='static/img/enter/facebook-letter-logo.png')
+        img(src='static/img/enter/instagram.png')
+        img(src='static/img/enter/google.png')

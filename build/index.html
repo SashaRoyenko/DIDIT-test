@@ -11,7 +11,7 @@
         <div class="language">
           <h4>RU</h4>
           <svg>
-            <use xlink:href="static/img/svg/symbol/sprite.svg#header--language-arrow"/>
+            <use href="static/img/svg/symbol/sprite.svg#header--language-arrow"/>
           </svg>
         </div>
         <div class="header_nav">
@@ -29,21 +29,21 @@
           </div>
           <div class="header_logo"><a href="">
               <svg class="header_logo_icon">
-                <use xlink:href="static/img/svg/symbol/sprite.svg#header--logo-icon"/>
+                <use href="static/img/svg/symbol/sprite.svg#header--logo-icon"/>
               </svg>
               <svg class="header_logo_text">
-                <use xlink:href="static/img/svg/symbol/sprite.svg#header--logo-text"/>
+                <use href="static/img/svg/symbol/sprite.svg#header--logo-text"/>
               </svg></a></div>
           <div class="header_nav_items">
             <svg class="search" id="search">
-              <use xlink:href="static/img/svg/symbol/sprite.svg#header--search "/>
+              <use href="static/img/svg/symbol/sprite.svg#header--search "/>
             </svg>
-            <svg class="user">
-              <use xlink:href="static/img/svg/symbol/sprite.svg#header--user"/>
+            <svg class="user" id="user">
+              <use href="static/img/svg/symbol/sprite.svg#header--user"/>
             </svg>
             <div class="header_notification">
               <svg class="like">
-                <use xlink:href="static/img/svg/symbol/sprite.svg#header--like"/>
+                <use href="static/img/svg/symbol/sprite.svg#header--like"/>
               </svg>
               <div class="active">
                 <h6>2</h6>
@@ -53,7 +53,7 @@
         </div>
         <div class="btn header_create_btn">
           <svg>
-            <use xlink:href="static/img/svg/symbol/sprite.svg#header--paint-brush"/>
+            <use href="static/img/svg/symbol/sprite.svg#header--paint-brush"/>
           </svg>
           <h4><a href="">создать образ</a></h4>
         </div>
@@ -312,6 +312,49 @@
         <p>Найдите свой продукт с быстрым поиском. Введите ключевые слова, такие как обувь, куртки, рубашки и т. д.</p>
       </div>
     </div>
+    <section class="authorization_s" id="authorization">
+      <div class="authorization_s__wrap">
+        <nav class="authorization_nav">
+          <div class="authorization_btn__wrap">
+            <div class="authorization_btn authorization_btn-enter authorization_btn-active" id="enter_btn">
+              <h5>ВХОД</h5>
+            </div>
+            <div class="authorization_btn authorization_btn-registration" id="registration_btn">
+              <h5>РЕГИСТРАЦИЯ</h5>
+            </div>
+          </div><img class="cancel" src="static/img/enter/cancel.png" id="authorization_cancel">
+        </nav>
+        <div class="enter">
+          <h3>Авторизация</h3>
+          <p>Пожалуйста, авторизируйтесь заполнив форму ниже</p>
+          <form class="enter_form">
+            <input type="e-mail" placeholder="E-mail" required>
+            <article class="password__wrap">
+              <input id="password" type="password" placeholder="Пароль" minlength="8" required>
+              <div id="change_password_view"></div>
+            </article>
+            <nav class="enter_nav__wrap">
+              <button class="authorization_form_btn enter_btn">ВОЙТИ</button>
+              <p>Забыли пароль?</p>
+              <input class="remember_form" type="checkbox">
+              <label>Запомнить меня</label>
+            </nav>
+          </form>
+          <h4>Войти с помощью:</h4>
+          <div class="enter_social-networks"><img src="static/img/enter/facebook-letter-logo.png"><img src="static/img/enter/instagram.png"><img src="static/img/enter/google.png"></div>
+        </div>
+        <div class="registration">
+          <h3>Создать аккаунт</h3>
+          <form class="registration_form">
+            <input type="name" placeholder="Имя" required>
+            <input type="e-mail" placeholder="E-mail" required>
+            <input id="first_password" type="password" placeholder="Пароль" minlength="8" required>
+            <input id="second_password" type="password" placeholder="Подтвердите пароль" minlength="8" required>
+            <button class="authorization_form_btn registration_btn" id="registration_submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <script type="text/javascript" src="static/js/libs.min.js"></script>
     <script type="text/javascript" src="static/js/main.js"></script>
   </body>
